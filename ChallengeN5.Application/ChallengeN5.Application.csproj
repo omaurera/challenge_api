@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Features\" />
+    <None Remove="Behaviours\" />
+    <None Remove="Validators\" />
+    <None Remove="Mappings\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Contracts\" />
+    <None Remove="Features\Commands\" />
+    <None Remove="Features\Queries\" />
+    <None Remove="Responses\" />
+    <None Remove="Middleware\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Behaviours\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Contracts\" />
+    <Folder Include="Features\Commands\" />
+    <Folder Include="Features\Queries\" />
+    <Folder Include="Responses\" />
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChallengeN5.Domain\ChallengeN5.Domain.csproj" />
+    <ProjectReference Include="..\ChallengeN5.Infrastructure\ChallengeN5.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
