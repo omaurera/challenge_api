@@ -1,5 +1,6 @@
 ﻿using ChallengeN5.Application;
 using ChallengeN5.Application.Middleware;
+using ChallengeN5.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

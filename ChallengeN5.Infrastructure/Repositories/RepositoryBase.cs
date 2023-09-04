@@ -1,4 +1,5 @@
 ﻿using System;
+using ChallengeN5.Application.Contracts;
 using ChallengeN5.Domain.Commons;
 using ChallengeN5.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;

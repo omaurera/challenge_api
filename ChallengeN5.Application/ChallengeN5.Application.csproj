@@ -16,7 +16,7 @@
     <None Remove="Features\Commands\" />
     <None Remove="Features\Queries\" />
     <None Remove="Responses\" />
-    <None Remove="Middleware\" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -28,18 +28,19 @@
     <Folder Include="Features\Commands\" />
     <Folder Include="Features\Queries\" />
     <Folder Include="Responses\" />
-    <Folder Include="Middleware\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="FluentValidation" Version="11.7.1" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
-    <PackageReference Include="MediatR" Version="12.1.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Confluent.Kafka" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ChallengeN5.Domain\ChallengeN5.Domain.csproj" />
-    <ProjectReference Include="..\ChallengeN5.Infrastructure\ChallengeN5.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

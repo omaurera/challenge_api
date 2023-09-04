@@ -15,7 +15,8 @@ namespace ChallengeN5.Application.Mappings
 				.ForMember(p => p.EmployeeLastName, req => req.MapFrom(x => x.EmployeeLastName))
 				.ForMember(p => p.PermissionType, req => req.MapFrom(x => x.PermissionType))
 				.ForMember(p => p.PermissionDate, req => req.MapFrom(x => DateTime.Now));
-			CreateMap<Permissions, PermissionResponse>().ReverseMap();
+			CreateMap<Permissions, PermissionResponse>()
+				.ForMember(p => p.IdPermissionType, res => res.MapFrom(x => x.PermissionType));
             CreateMap<UpdatePermissionCommand, Permissions>()
                 .ForMember(p => p.Id, req => req.MapFrom(x => x.Id))
                 .ForMember(p => p.EmployeeName, req => req.MapFrom(x => x.EmployeeName))
