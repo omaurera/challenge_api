@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using ChallengeN5.Application.Contracts;
 using ChallengeN5.Application.Responses;
 using ChallengeN5.Application.Services;
@@ -10,9 +9,6 @@ namespace ChallengeN5.Application.Features.Queries
 {
 	public class GetPermissionsQuery : IRequest<CustomMultipleResponse<PermissionResponse>>
 	{
-		public GetPermissionsQuery()
-		{
-		}
 	}
 
     public class GetPermissionsQueryHandler : IRequestHandler<GetPermissionsQuery, CustomMultipleResponse<PermissionResponse>>

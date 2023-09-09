@@ -1,5 +1,4 @@
-﻿using System;
-using ChallengeN5.Domain.Commons;
+﻿using ChallengeN5.Domain.Commons;
 
 namespace ChallengeN5.Domain
 {

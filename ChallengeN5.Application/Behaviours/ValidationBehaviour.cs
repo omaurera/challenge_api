@@ -1,5 +1,4 @@
-﻿using System;
-using FluentValidation;
+﻿using FluentValidation;
 using MediatR;
 
 namespace ChallengeN5.Application.Behaviours

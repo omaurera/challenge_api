@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using ChallengeN5.Application.Contracts;
 using ChallengeN5.Application.Responses;
 using ChallengeN5.Application.Services;

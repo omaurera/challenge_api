@@ -1,5 +1,4 @@
-﻿using System;
-using ChallengeN5.Application.Contracts;
+﻿using ChallengeN5.Application.Contracts;
 using ChallengeN5.Domain.Commons;
 using ChallengeN5.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -22,10 +21,10 @@ namespace ChallengeN5.Infrastructure.Repositories
             return entity;
         }
 
-        public async Task DeleteEntity(T entity)
+        public async Task<bool> DeleteEntity(T entity)
         {
             _context.Set<T>().Remove(entity);
-            await _context.SaveChangesAsync();
+            return await _context.SaveChangesAsync() > 0 ? true : false;
         }
 
         public async Task<IReadOnlyList<T>> GetAll()

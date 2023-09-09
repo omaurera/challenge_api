@@ -1,5 +1,4 @@
-﻿using System;
-using ChallengeN5.Application.Responses;
+﻿using ChallengeN5.Application.Responses;
 using Confluent.Kafka;
 using Newtonsoft.Json;
 
@@ -11,9 +10,11 @@ namespace ChallengeN5.Application.Services
         {
             var config = new ProducerConfig
             {
-                BootstrapServers = "localhost:9092",
-                ClientId = "challenge-app",
-                BrokerAddressFamily = BrokerAddressFamily.V4,
+                BootstrapServers = "pkc-6ojv2.us-west4.gcp.confluent.cloud:9092",
+                SecurityProtocol = SecurityProtocol.SaslSsl,
+                SaslMechanism = SaslMechanism.Plain,
+                SaslUsername = "J7VSE4U42DD6UY3M",
+                SaslPassword = "4y1DfTgZkw4J5Q4Eu9mAGLQ7ZQQFWr4qlfvgNKY/osCUkwr5KYy/EQTnBXASVO7g"
             };
             using
             var producer = new ProducerBuilder<Null, string>(config).Build();

@@ -1,5 +1,5 @@
 ﻿using ChallengeN5.Application;
-using ChallengeN5.Application.Middleware;
+using ChallengeN5.Application.Middlewares;
 using ChallengeN5.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +24,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseMiddleware<ExceptionMiddleware>();
+
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+);
 
 app.UseHttpsRedirection();
 

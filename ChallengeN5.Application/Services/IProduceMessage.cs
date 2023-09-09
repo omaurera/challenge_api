@@ -1,5 +1,4 @@
-﻿using System;
-using ChallengeN5.Application.Responses;
+﻿using ChallengeN5.Application.Responses;
 
 namespace ChallengeN5.Application.Services
 {

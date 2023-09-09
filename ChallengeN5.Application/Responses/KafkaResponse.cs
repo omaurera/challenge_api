@@ -1,5 +1,4 @@
-﻿using System;
-namespace ChallengeN5.Application.Responses
+﻿namespace ChallengeN5.Application.Responses
 {
 	public class KafkaResponse
 	{

@@ -1,5 +1,5 @@
-﻿using System;
-using ChallengeN5.Application.Contracts;
+﻿using ChallengeN5.Application.Contracts;
+using ChallengeN5.Application.Services;
 using ChallengeN5.Infrastructure.Persistence;
 using ChallengeN5.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +16,7 @@ namespace ChallengeN5.Infrastructure
                 options.UseSqlServer(configuration.GetConnectionString("ConnectionString"))
             );
             services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
+            services.AddScoped<IProduceMessage, ProduceMessage>();
             return services;
         }
 	}

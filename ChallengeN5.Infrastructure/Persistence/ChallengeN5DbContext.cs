@@ -1,5 +1,4 @@
-﻿using System;
-using ChallengeN5.Domain;
+﻿using ChallengeN5.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace ChallengeN5.Infrastructure.Persistence

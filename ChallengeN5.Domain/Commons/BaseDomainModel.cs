@@ -1,5 +1,4 @@
-﻿using System;
-namespace ChallengeN5.Domain.Commons
+﻿namespace ChallengeN5.Domain.Commons
 {
 	public class BaseDomainModel
 	{

@@ -1,5 +1,4 @@
-﻿using System;
-using ChallengeN5.Domain.Commons;
+﻿using ChallengeN5.Domain.Commons;
 
 namespace ChallengeN5.Application.Contracts
 {
@@ -9,7 +8,7 @@ namespace ChallengeN5.Application.Contracts
         Task<T> GetById(int id);
         Task<T> AddEntity(T entity);
         Task<T> UpdateEntity(T entity);
-        Task DeleteEntity(T entity);
+        Task<bool> DeleteEntity(T entity);
     }
 }
 
